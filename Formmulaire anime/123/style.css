@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+body{
+   background: rgb(32, 107, 219); 
+}
+
+p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: aliceblue;
+    font-family: "Poppins" sans-serif;
+    padding: 0.5cm;
+}
+
+div{
+    position: absolute;
+    transform: translate(-50%, -50%) !important;
+    top: 50%;
+    left: 50%;
+    animation: animate 4s ease-in-out infinite ;
+    animation-delay: -2.5s;
+}
+
+form{
+    z-index: 10000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 239, 209, 0.452);
+    border-radius: 20px;
+    height: 100vh;
+    padding: 1.2em;
+    height: 320px;
+    backdrop-filter: blur(3px);
+    
+}
+form::placeholder{
+   color: aliceblue;
+   font-family: "Poppins";
+}
+
+@keyframes animate{
+    0%{
+        top: 20rem;
+    }
+    50%{
+        top: 22rem;
+    }
+    100%{
+        top: 20rem;  
+    }
+}
+
+input{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 1rem;
+    outline: 0;
+    padding: 10px;
+    width: 12rem;
+    border-radius: 30px;
+    background: rgba(221, 221, 221, 0.514);
+}
+
+a{
+  font-size: small;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 0.5cm;
+}
+
+button{
+    width: 2rem;
+    color: white;
+    text-decoration-color: white;
+}
+
+.rel1{
+    position: absolute;
+    padding: 1cm;
+    width: 0.5cm;
+    height: 1cm;
+    background-color: rgba(240, 248, 255, 0.459);
+    border-radius: 5px;
+    top: -15%;
+    left: -20%;
+}
+
+dix {
+    backdrop-filter: blur(10px);
+}
+
+.rel2{
+    z-index: -100000;
+    position: absolute;
+    padding: 1cm;
+    background-color: rgba(240, 248, 255, 0.459);
+    border-radius: 5px; 
+    top: -5%;
+    right: -10%;
+}
+
+.rel3{
+    position: absolute;
+    padding: 0.8cm;
+    background-color:rgba(240, 248, 255, 0.356);
+    border-radius: 5px;
+    left: -5%;
+    top: 92%;
+}
+
+.rel4{
+    z-index: -100000;
+    position: absolute;
+    padding: 1.2cm;
+    background-color:rgba(240, 248, 255, 0.356);
+    border-radius: 5px;
+    left: -18%;
+    top: 50%;
+}
+
+.rel6{
+    z-index: -100000;
+    position: absolute;
+    padding: 1.2cm;
+    background-color:rgba(240, 248, 255, 0.356);
+    border-radius: 5px;
+    bottom: 5%;
+    left: 150px;
+}
